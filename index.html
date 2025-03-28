@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <style>
+        .nav-item:hover {
+            background-color: #00a135 !important; 
+            color: white !important; /* Cambia el color del texto */
+            transform: scale(1.05); /* Hace el botón ligeramente más grande */
+            transition: all 0.3s ease-in-out; /* Agrega una transición suave */
+        }
+        .navbar-brand:hover {
+            background-color: #00a135 !important; 
+            color: white !important; /* Cambia el color del texto */
+            transform: scale(1.05); /* Hace el botón ligeramente más grande */
+            transition: all 0.3s ease-in-out; /* Agrega una transición suave */
+        }
+        .spotify-logo {
+            width: 100px; /* Ajusta según necesites */
+            height: 100px; /* Mantiene la proporción */
+            border-radius: 50%; /* Mantiene la imagen circular */
+            transition: opacity 1s ease-in-out, transform 0.5s ease-in-out;
+        }
+        
+        .spotify-logo:hover {
+           
+            content: url('https://images.genius.com/a6817a29955bc26af0ed704b2e705bee.1000x1000x1.png'); /* Cambia la imagen */
+            border-radius: 50%; /* Mantiene el formato circular */
+            transform: scale(1.05); /* Agrega un pequeño zoom para suavizar el efecto */
+            opacity: 0.8; /* Opción para un ligero cambio de transparencia */
+        }
+        .carousel-inner img {
+            height: 400px; /* Ajusta la altura según lo que necesites */
+            object-fit: cover; /* Hace que la imagen se recorte en lugar de deformarse */
+        }
+        .album-list {
+            list-style: none; /* Elimina los bullets */
+            display: flex; /* Alinea las imágenes en fila */
+            gap: 15px; /* Espacio entre imágenes */
+            padding: 0; /* Elimina el padding por defecto de la lista */
+        }
+        
+        .album-list li {
+            display: inline-block; /* Asegura que los elementos se comporten bien */
+        }
+        
+        .album-list img {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px; /* Bordes redondeados */
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .album-list img:hover {
+            transform: scale(1.1); /* Hace un ligero zoom al pasar el mouse */
+        }
+        
+        .form li{
+            display: inline-block;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">FERXXO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    
+    <div class="container mt-4">
+        <div class="row mt-4">
+            <div class="col">
+                <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://cdn-images.dzcdn.net/images/cover/fee4b7345f658a57a39747bf24b7466b/0x1900-000000-80-0-0.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://i.scdn.co/image/ab67616d0000b27382877ed8854250100fb4a3f1" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://cdn-images.dzcdn.net/images/cover/eb83595503696e0558b0391e23be7eb7/0x1900-000000-80-0-0.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-lg-4 col-md-5 text-center">
+                <div class="card">
+                    <img src="https://images.genius.com/f72e4d4844a13329fc98911b782b99d3.300x300x1.png" class="card-img-top" alt="Profile">
+                    <div class="card-body">
+                        <h5 class="card-title">FERXXO</h5>
+                        <p class="card-text">Artista colombiano<br><b>Spotify</b></p>
+                        <a href="https://open.spotify.com/intl-es/artist/2LRoIwlKmHjgvigdNGBHNo" target="_blank">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/480px-Spotify_logo_without_text.svg.png" alt="Spotify" class="spotify-logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-7">
+                <div class="p-4 bg-light rounded">
+                    <h2>About Feid</h2>
+                    <p>Salomón Villada Hoyos (Medellín, 19 de agosto de 1992),
+                         más conocido por su nombre artístico Feid o Ferxxo, es un cantante,
+                          compositor y productor discográfico colombiano.
+
+                        Durante los inicios de su carrera musical, se destacó por componer canciones
+                         célebres como «Secretos» de Reykon, <a href="https://www.youtube.com/watch?v=zZjSX01P5dE" 
+                         > «Ginza» </a>de J Balvin y «Mamita» de CNCO, 
+                         todas las cuales lograron entrar en la lista Hot Latin Songs de Billboard. 
+                         En noviembre de 2017, lanzó su álbum debut de estudio titulado Así como 
+                         suena, que incluía los sencillos «Qué raro» con J Balvin y «911» con Nacho, 
+                         marcando su primera entrada en una lista de Billboard. En mayo de 2019, 
+                         lanzó su segundo álbum de estudio titulado 19, lo que le valió su primera 
+                         nominación a los Premios Grammy Latinos en la categoría de mejor álbum de 
+                         música urbana.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="card p-4 bg-white shadow rounded"style="height:200px">
+                    <h4>Último temas</h4>
+                    <ul>
+                        <li><a href="https://www.youtube.com/watch?v=SSWM9wWp1Rk">DALLAX</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=IxEHLfUd2eM">NOS DESCONOXXIMOS</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=UXbe-LU7C74">CRUZ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card p-4 bg-white shadow rounded" style="height:200px">
+                    <h4>Últimos álbumes</h4>
+                    <ul class="album-list">
+                        <li>
+                            <a href="https://open.spotify.com/intl-es/album/5L3PAo50R75rOZLlEvokZZ?si=R1oBEF0pQ66C1yhmxSyDiQ" target="_blank">
+                            <img src="https://cdn-images.dzcdn.net/images/cover/5ad8318c74216974aa39100d8e8a1124/0x1900-000000-80-0-0.jpg" alt="LOS 9 DE FERXXO Y SKY ROMPIENDO">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://open.spotify.com/intl-es/album/5WTsC6KDdxp9xVQrAMIU6c?si=D8-hpXd1RyS2BS19s74OFQ" target="_blank">
+                            <img src="https://cdn-images.dzcdn.net/images/cover/eb83595503696e0558b0391e23be7eb7/0x1900-000000-80-0-0.jpg" alt="Manifesting 20-05">
+                            </a>
+                        </li>
+                        <li>
+                            <a herf="https://open.spotify.com/intl-es/album/0lgs2Sa82lyX89nBUWyUy6?si=p63I4oYDS-uKj7BAy3t2cg" target="_blank">
+                            <img src="https://cdn-images.dzcdn.net/images/cover/fee4b7345f658a57a39747bf24b7466b/0x1900-000000-80-0-0.jpg" alt="Ferxxocalipsis">
+                            </a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col">
+                <div class="card p-4 bg-white shadow rounded">
+                    <h4>Suscribite para obtener noticias</h4>
+                    <ul class="form">
+                        <li>
+                            <label for="emailInput" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="emailInput" placeholder="name@example.com" style="width:auto;">
+                        </li>
+                        <li>
+                            <button type="submit" class="btn btn-primary">Suscribirse</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
