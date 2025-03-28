@@ -1,0 +1,60 @@
+.nav-item:hover {
+    background-color: #00a135 !important; 
+    color: white !important; /* Cambia el color del texto */
+    transform: scale(1.05); /* Hace el botón ligeramente más grande */
+    transition: all 0.3s ease-in-out; /* Agrega una transición suave */
+}
+.navbar-brand:hover {
+    background-color: #00a135 !important; 
+    color: white !important; /* Cambia el color del texto */
+    transform: scale(1.05); /* Hace el botón ligeramente más grande */
+    transition: all 0.3s ease-in-out; /* Agrega una transición suave */
+}
+.spotify-logo {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; /* Mantiene la imagen circular */
+    transition: opacity 1s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.spotify-logo:hover {
+   
+    content: url('https://images.genius.com/a6817a29955bc26af0ed704b2e705bee.1000x1000x1.png'); /* Cambia la imagen */
+    border-radius: 50%; /* Mantiene el formato circular */
+    transform: scale(1.05); /* Agrega un pequeño zoom para suavizar el efecto */
+    opacity: 0.8; /* Opción para un ligero cambio de transparencia */
+}
+
+.carousel-inner img {
+    height: 400px; 
+    object-fit: cover; /* Hace que la imagen se recorte en lugar de deformarse */
+
+}
+
+.album-list {
+    list-style: none; /* Elimina los bullets */
+    display: flex; /* Alinea las imágenes en fila */
+    gap: 15px; /* Espacio entre imágenes */
+    padding: 0; /* Elimina el padding por defecto de la lista */
+}
+
+.album-list li {
+    display: inline-block; /* Asegura que los elementos se comporten bien */
+}
+
+.album-list img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.3s ea
+    se-in-out;
+}
+
+.album-list img:hover {
+    transform: scale(1.1); /* Hace un ligero zoom al pasar el mouse */
+}
+
+.form li{
+    display: inline-block;
+}
+

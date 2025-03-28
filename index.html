@@ -1,68 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Page</title>
+    <title>FERXXO EDITION</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <style>
-        .nav-item:hover {
-            background-color: #00a135 !important; 
-            color: white !important; /* Cambia el color del texto */
-            transform: scale(1.05); /* Hace el botón ligeramente más grande */
-            transition: all 0.3s ease-in-out; /* Agrega una transición suave */
-        }
-        .navbar-brand:hover {
-            background-color: #00a135 !important; 
-            color: white !important; /* Cambia el color del texto */
-            transform: scale(1.05); /* Hace el botón ligeramente más grande */
-            transition: all 0.3s ease-in-out; /* Agrega una transición suave */
-        }
-        .spotify-logo {
-            width: 100px; /* Ajusta según necesites */
-            height: 100px; /* Mantiene la proporción */
-            border-radius: 50%; /* Mantiene la imagen circular */
-            transition: opacity 1s ease-in-out, transform 0.5s ease-in-out;
-        }
-        
-        .spotify-logo:hover {
-           
-            content: url('https://images.genius.com/a6817a29955bc26af0ed704b2e705bee.1000x1000x1.png'); /* Cambia la imagen */
-            border-radius: 50%; /* Mantiene el formato circular */
-            transform: scale(1.05); /* Agrega un pequeño zoom para suavizar el efecto */
-            opacity: 0.8; /* Opción para un ligero cambio de transparencia */
-        }
-        .carousel-inner img {
-            height: 400px; /* Ajusta la altura según lo que necesites */
-            object-fit: cover; /* Hace que la imagen se recorte en lugar de deformarse */
-        }
-        .album-list {
-            list-style: none; /* Elimina los bullets */
-            display: flex; /* Alinea las imágenes en fila */
-            gap: 15px; /* Espacio entre imágenes */
-            padding: 0; /* Elimina el padding por defecto de la lista */
-        }
-        
-        .album-list li {
-            display: inline-block; /* Asegura que los elementos se comporten bien */
-        }
-        
-        .album-list img {
-            width: 80px;
-            height: 80px;
-            border-radius: 10px; /* Bordes redondeados */
-            transition: transform 0.3s ease-in-out;
-        }
-        
-        .album-list img:hover {
-            transform: scale(1.1); /* Hace un ligero zoom al pasar el mouse */
-        }
-        
-        .form li{
-            display: inline-block;
-        }
-
-    </style>
+    <link rel="stylesheet" href="./style.css"> 
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -83,10 +26,10 @@
     </nav>
     
     
-    <div class="container mt-4">
-        <div class="row mt-4">
+    <div class="container.fluid bg-dark">
+        <div class="row">
             <div class="col">
-                <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                <div id="carousel" class="carousel slide " data-bs-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <img src="https://cdn-images.dzcdn.net/images/cover/fee4b7345f658a57a39747bf24b7466b/0x1900-000000-80-0-0.jpg" class="d-block w-100" alt="...">
@@ -102,7 +45,7 @@
             </div>
         </div>
 
-        <div class="row mt-4">
+        <div class="row mt-4 ml-2 mr-4">
             <div class="col-lg-4 col-md-5 text-center">
                 <div class="card">
                     <img src="https://images.genius.com/f72e4d4844a13329fc98911b782b99d3.300x300x1.png" class="card-img-top" alt="Profile">
@@ -137,7 +80,7 @@
             </div>
         </div>
         
-        <div class="row mt-4">
+        <div class="row mt-4 ml-2 mr-4">
             <div class="col-md-6">
                 <div class="card p-4 bg-white shadow rounded"style="height:200px">
                     <h4>Último temas</h4>
@@ -173,7 +116,7 @@
             </div>
         </div>
 
-        <div class="row mt-4">
+        <div class="row mt-4 ml-2 mr-4">
             <div class="col">
                 <div class="card p-4 bg-white shadow rounded">
                     <h4>Suscribite para obtener noticias</h4>
