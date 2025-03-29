@@ -29,7 +29,7 @@
     <div class="container.fluid bg-dark">
         <div class="row">
             <div class="col">
-                <div id="carousel" class="carousel slide " data-bs-ride="carousel">
+                <div id="carousel" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <img src="https://cdn-images.dzcdn.net/images/cover/fee4b7345f658a57a39747bf24b7466b/0x1900-000000-80-0-0.jpg" class="d-block w-100" alt="...">
@@ -52,30 +52,49 @@
                     <div class="card-body">
                         <h5 class="card-title">FERXXO</h5>
                         <p class="card-text">Artista colombiano<br><b>Spotify</b></p>
-                        <a href="https://open.spotify.com/intl-es/artist/2LRoIwlKmHjgvigdNGBHNo" target="_blank">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/480px-Spotify_logo_without_text.svg.png" alt="Spotify" class="spotify-logo">
-                        </a>
+                        
+                        <div class="spotify-logo-container">
+                            <a href="https://open.spotify.com/intl-es/artist/2LRoIwlKmHjgvigdNGBHNo" target="_blank">
+                            <img class="spotify-logo original" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/480px-Spotify_logo_without_text.svg.png" alt="Spotify" class="spotify-logo">
+                            <img class="spotify-logo hover" src="https://images.genius.com/a6817a29955bc26af0ed704b2e705bee.1000x1000x1.png" alt="">
+                            </a>
+                        </div>
+                       
                     </div>
                 </div>
             </div>
             <div class="col-lg-8 col-md-7">
-                <div class="p-4 bg-light rounded">
-                    <h2>About Feid</h2>
-                    <p>Salomón Villada Hoyos (Medellín, 19 de agosto de 1992),
-                         más conocido por su nombre artístico Feid o Ferxxo, es un cantante,
-                          compositor y productor discográfico colombiano.
-
-                        Durante los inicios de su carrera musical, se destacó por componer canciones
-                         célebres como «Secretos» de Reykon, <a href="https://www.youtube.com/watch?v=zZjSX01P5dE" 
-                         > «Ginza» </a>de J Balvin y «Mamita» de CNCO, 
-                         todas las cuales lograron entrar en la lista Hot Latin Songs de Billboard. 
-                         En noviembre de 2017, lanzó su álbum debut de estudio titulado Así como 
-                         suena, que incluía los sencillos «Qué raro» con J Balvin y «911» con Nacho, 
-                         marcando su primera entrada en una lista de Billboard. En mayo de 2019, 
-                         lanzó su segundo álbum de estudio titulado 19, lo que le valió su primera 
-                         nominación a los Premios Grammy Latinos en la categoría de mejor álbum de 
-                         música urbana.
-                    </p>
+                <div class="p-4 bg-light rounded shadow-sm border border-light">
+                    <h2 class="mb-3 text-success fw-bold">Sobre Feid</h2>
+                    
+                    <div class="mb-2 text-muted small">
+                        <i class="bi bi-geo-alt-fill"></i> Medellín, 19 de agosto de 1992
+                    </div>
+                    
+                    <div class="biography-text">
+                        <p class="mb-3">
+                            <strong>Salomón Villada Hoyos</strong>, más conocido por su nombre artístico <span class="text-success fw-semibold">Feid</span> o <span class="text-success fw-semibold">Ferxxo</span>, es un cantante, 
+                            compositor y productor discográfico colombiano.
+                        </p>
+                        
+                        <p class="mb-3">
+                            Durante los inicios de su carrera musical, se destacó por componer canciones célebres como 
+                            <a href="https://www.youtube.com/watch?v=CcnSFJKQDMk" class="links-parrafo">"Secretos"</a>  de Reykon, 
+                            <a href="https://www.youtube.com/watch?v=zZjSX01P5dE" class="links-parrafo">
+                                "Ginza" 
+                            </a> de J Balvin y 
+                            <a href="https://www.youtube.com/watch?v=OHELU6I10wQ" class="links-parrafo">"Mamita"</a>  de CNCO, 
+                            todas las cuales lograron entrar en la lista Hot Latin Songs de Billboard.
+                        </p>
+                        
+                        <p>
+                            En noviembre de 2017, lanzó su álbum debut de estudio titulado "<span class="fst-italic">Así como suena</span>", 
+                            que incluía los sencillos "<span class="fst-italic">Qué raro</span>" con J Balvin y "<span class="fst-italic">911</span>" con Nacho, 
+                            marcando su primera entrada en una lista de Billboard. En mayo de 2019, 
+                            lanzó su segundo álbum de estudio titulado "<span class="fst-italic">19</span>", lo que le valió su primera 
+                            nominación a los Premios Grammy Latinos en la categoría de mejor álbum de música urbana.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -83,18 +102,19 @@
         <div class="row mt-4 ml-2 mr-4">
             <div class="col-md-6">
                 <div class="card p-4 bg-white shadow rounded"style="height:200px">
-                    <h4>Último temas</h4>
-                    <ul>
-                        <li><a href="https://www.youtube.com/watch?v=SSWM9wWp1Rk">DALLAX</a></li>
-                        <li><a href="https://www.youtube.com/watch?v=IxEHLfUd2eM">NOS DESCONOXXIMOS</a></li>
-                        <li><a href="https://www.youtube.com/watch?v=UXbe-LU7C74">CRUZ</a></li>
+                    <h4 style="text-align: left;">ÚLTIMOS SENCILLO<span style="color:#0dbd1f;">XX</span> </h4>
+                    <ul class="btn-temas list-unstyled">
+                        <li><a href="https://www.youtube.com/watch?v=SSWM9wWp1Rk" target="_blank">DALLAX</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=IxEHLfUd2eM" target="_blank">NOS DESCONOXXIMOS</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=UXbe-LU7C74" target="_blank">CRUZ</a></li>
                     </ul>
+                    
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="card p-4 bg-white shadow rounded" style="height:200px">
-                    <h4>Últimos álbumes</h4>
-                    <ul class="album-list">
+                <div class="card p-4 bg-white shadow rounded d-flex flex-column align-items-center" style="height:200px">
+                    <h4 class="text-center">ÚLTIMOS ÁLBUMES</h4>
+                    <ul class="album-list d-flex justify-content-center">
                         <li>
                             <a href="https://open.spotify.com/intl-es/album/5L3PAo50R75rOZLlEvokZZ?si=R1oBEF0pQ66C1yhmxSyDiQ" target="_blank">
                             <img src="https://cdn-images.dzcdn.net/images/cover/5ad8318c74216974aa39100d8e8a1124/0x1900-000000-80-0-0.jpg" alt="LOS 9 DE FERXXO Y SKY ROMPIENDO">
@@ -106,7 +126,7 @@
                             </a>
                         </li>
                         <li>
-                            <a herf="https://open.spotify.com/intl-es/album/0lgs2Sa82lyX89nBUWyUy6?si=p63I4oYDS-uKj7BAy3t2cg" target="_blank">
+                            <a href="https://open.spotify.com/intl-es/album/0lgs2Sa82lyX89nBUWyUy6?si=p63I4oYDS-uKj7BAy3t2cg" target="_blank">
                             <img src="https://cdn-images.dzcdn.net/images/cover/fee4b7345f658a57a39747bf24b7466b/0x1900-000000-80-0-0.jpg" alt="Ferxxocalipsis">
                             </a>
                         </li>
@@ -118,15 +138,15 @@
 
         <div class="row mt-4 ml-2 mr-4">
             <div class="col">
-                <div class="card p-4 bg-white shadow rounded">
-                    <h4>Suscribite para obtener noticias</h4>
+                <div class="card p-4 bg-white shadow rounded d-flex flex-column align-items-center">
+                    <h4>Suscríbete para obtener Noticias</h4>
                     <ul class="form">
                         <li>
                             <label for="emailInput" class="form-label">Email address</label>
                             <input type="email" class="form-control" id="emailInput" placeholder="name@example.com" style="width:auto;">
                         </li>
                         <li>
-                            <button type="submit" class="btn btn-primary">Suscribirse</button>
+                            <button type="submit" class="btn btn-success">Suscribirse</button>
                         </li>
                     </ul>
                 </div>
